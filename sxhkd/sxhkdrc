@@ -156,4 +156,4 @@ ctrl + alt + shift + m
 
 # screenshot utility
 super + a
-	~/.screenshot
+	~/.config/.screenshot
