@@ -3,13 +3,17 @@
 BSPDIR="$HOME/.config/bspwm"
 export PATH="${PATH}:$BSPDIR/scripts"
 
-xrandr --output DP-4 --primary --mode 3840x1200 --rotate normal --output HDMI-A-2-2 --mode 1920x1080 --rotate normal --above DP-4 --output DisplayPort-2-1 --mode 2560x1440 --rotate left --left-of DP-4 --left-of HDMI-A-2-2
+MONITOR_ONE=$(xrandr --query | grep -sw 'connected' | grep -sw "DP" | grep -o "^[^ ]*")
+MONITOR_TWO=$(xrandr --query | grep -sw 'connected' | grep -sw "HDMI" | grep -o "^[^ ]*")
+MONITOR_THREE=$(xrandr --query | grep -sw 'connected' | grep -sw "DisplayPort" | grep -o "^[^ ]*")
+
+xrandr --output $MONITOR_ONE --primary --mode 3840x1200 --rotate normal --output $MONITOR_TWO --mode 1920x1080 --rotate normal --above $MONITOR_ONE --output $MONITOR_THREE --mode 2560x1440 --rotate left --left-of $MONITOR_ONE --left-of $MONITOR_TWO
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor DP-4 -d 1 2 3 4 5 6 7 8
-bspc monitor HDMI-A-2-2 -d "Wall Monitor"
-bspc monitor DisplayPort-2-1 -d "Vertical Monitor"
+bspc monitor $MONITOR_ONE -d 1 2 3 4 5 6 7 8
+bspc monitor $MONITOR_TWO -d "Wall Monitor"
+bspc monitor $MONITOR_THREE -d "Vertical Monitor"
 
 bspc config focus_follows_pointer true
 
@@ -29,4 +33,4 @@ picom &
 ~/.config/polybar/launch.sh &
 xsetroot -cursor_name left_ptr &
 ksuperkey -e 'Super_L=Super_L|R'
-bspc wm -O DP-4 HDMI-A-2-2 DisplayPort-2-1
+bspc wm -O $MONITOR_ONE $MONITOR_TWO $MONITOR_THREE
