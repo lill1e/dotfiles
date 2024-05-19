@@ -16,5 +16,5 @@ theme='style-3'
 
 ## Run
 rofi \
-    -show drun \
+    -show $1 \
     -theme ${dir}/${theme}.rasi

@@ -9,8 +9,9 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run";
+	modi:                       "drun,calc,run";
     show-icons:                 false;
+    display-calc:               "🖩";
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";

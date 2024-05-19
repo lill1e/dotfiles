@@ -4,7 +4,11 @@
 
 # rofi drun
 super + r
-	~/.config/rofi/launchers/type-1/launcher.sh
+	~/.config/rofi/launchers/type-1/launcher.sh drun
+
+# rofi calc
+super + shift + c
+    ~/.config/rofi/launchers/type-1/launcher.sh calc
 
 # terminal emulator
 super + Return
