@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/lillie/Downloads/cityside.jpg'
+feh --no-fehbg --bg-fill "/home/lillie/Downloads/cyberpunk.png" "/home/lillie/Downloads/jinx.png" "/home/lillie/Downloads/nightroad2.png"
