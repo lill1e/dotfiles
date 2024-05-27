@@ -16,6 +16,7 @@ bspc monitor $MONITOR_TWO -d "Wall Monitor"
 bspc monitor $MONITOR_THREE -d "Vertical Monitor"
 
 bspc config focus_follows_pointer true
+bspc config pointer_follows_focus true
 
 bspc config border_width         2
 bspc config window_gap           5
