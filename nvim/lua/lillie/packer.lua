@@ -39,4 +39,5 @@ return require('packer').startup(function(use)
     }
 
     use("mfussenegger/nvim-jdtls")
+    use("lewis6991/gitsigns.nvim")
 end)
