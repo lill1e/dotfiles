@@ -10,7 +10,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { "tsserver", "rust_analyzer", "eslint", "lua_ls", "clangd", "gopls", "texlab", "jdtls" },
+    ensure_installed = { "tsserver", "rust_analyzer", "eslint", "lua_ls", "clangd", "gopls", "texlab" },
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})
