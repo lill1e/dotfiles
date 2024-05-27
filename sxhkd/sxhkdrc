@@ -159,6 +159,8 @@ super + shift + x
 	shutdown now
 super + shift + r
 	reboot
+super + shift + l
+	bspc quit
 
 # fix monitor/workspace order
 ctrl + alt + shift + m
