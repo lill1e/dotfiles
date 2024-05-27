@@ -168,4 +168,4 @@ ctrl + alt + shift + m
 
 # screenshot utility
 super + a
-	~/.config/scripts/.screenshot
+	~/.config/scripts/.screenshot xorg
