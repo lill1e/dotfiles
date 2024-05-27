@@ -37,4 +37,6 @@ return require('packer').startup(function(use)
             {"L3MON4D3/LuaSnip"}
         }
     }
+
+    use("mfussenegger/nvim-jdtls")
 end)
