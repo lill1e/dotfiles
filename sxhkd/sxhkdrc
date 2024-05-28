@@ -169,3 +169,7 @@ ctrl + alt + shift + m
 # screenshot utility
 super + a
 	~/.config/scripts/.screenshot xorg
+
+# toggle window split
+super + s
+    bspc node @parent -R 90
