@@ -42,5 +42,6 @@ return require('packer').startup(function(use)
     use("lewis6991/gitsigns.nvim")
     use("iamcco/markdown-preview.nvim")
     use("lervag/vimtex")
+    use { "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" }
     use({ "epwalsh/obsidian.nvim", requires = "nvim-lua/plenary.nvim" })
 end)
