@@ -10,8 +10,6 @@ require("obsidian").setup({
         nvim_cmp = true
     },
 
-    open_notes_in = "vsplit",
-
     note_id_func = function(title)
         return title
     end
