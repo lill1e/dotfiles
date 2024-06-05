@@ -143,7 +143,7 @@ ctrl + alt + l
 
 # Apps
 super + shift + {w,d,m,o,t,e,s}
-	{firefox,discord,spotify,obsidian,thunar,code,morgen}
+	{firefox,discord,spotify,obsidian,thunar,alacritty -e nvim,morgen}
 
 # Utils
 XF86Audio{RaiseVolume,LowerVolume}
