@@ -142,8 +142,8 @@ ctrl + alt + l
 	betterlockscreen -l
 
 # Apps
-super + shift + {w,d,m,o,t,e,s}
-	{firefox,discord,spotify,obsidian,thunar,alacritty -e nvim,morgen}
+super + shift + {w,d,m,o,t,e,s,p,n}
+	{firefox,discord,spotify,obsidian,thunar,alacritty -e nvim,morgen,pavucontrol,logseq}
 
 # Utils
 XF86Audio{RaiseVolume,LowerVolume}
