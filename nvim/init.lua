@@ -5,6 +5,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
+vim.opt.autoindent = true
 vim.opt.expandtab = true
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -14,3 +15,10 @@ vim.opt.updatetime = 50
 vim.opt.conceallevel = 2
 
 vim.api.nvim_set_option("clipboard", "unnamed")
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.expandtab = false
+    end
+})
