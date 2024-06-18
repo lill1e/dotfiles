@@ -44,4 +44,5 @@ return require('packer').startup(function(use)
     use { "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" }
     use({ "epwalsh/obsidian.nvim", requires = "nvim-lua/plenary.nvim" })
     use("IogaMaster/neocord")
+    use("mfussenegger/nvim-jdtls")
 end)
