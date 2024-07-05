@@ -144,6 +144,8 @@ ctrl + alt + l
 # Apps
 super + shift + {w,d,m,o,t,e,s,p,n}
 	{firefox,discord,spotify,obsidian,thunar,alacritty -e nvim,morgen,pavucontrol,logseq}
+super + ctrl + shift + {e}
+    {code}
 
 # Utils
 XF86Audio{RaiseVolume,LowerVolume}
