@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Neotree)
 vim.keymap.set("n", "<leader>w", ":vertical split<CR>")
 vim.keymap.set("n", "<leader>h", "<C-W>h")
+vim.keymap.set("n", "<leader>j", "<C-W>j")
+vim.keymap.set("n", "<leader>k", "<C-W>k")
 vim.keymap.set("n", "<leader>l", "<C-W>l")
 vim.api.nvim_set_keymap("n", "<Up>", "<Nop>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Down>", "<Nop>", { noremap = true, silent = true })
