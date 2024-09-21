@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ "$MODE" == "LAPTOP" ]
+if [ "$MODE" == "LAPTOP" ] || [ "$MODE" == "THINKPAD" ]
 then
     feh --no-fehbg --bg-fill "/home/lillie/Downloads/cyberpunk.png"
 else
