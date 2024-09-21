@@ -74,6 +74,8 @@ super + ctrl + {m,x,y,z}
 # focus the node in the given direction
 super + {_,shift + }{Left, Down, Up, Right}
 	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + }{h, j, k, l}
+	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -85,6 +87,8 @@ super + {_,shift + }c
 
 # focus the next/previous desktop in the current monitor
 ctrl + alt + {Left,Right}
+	bspc desktop -f {prev,next}.local
+ctrl + alt + {h,l}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
@@ -138,8 +142,8 @@ super + {h,j,k,l}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # Lock Screen
-ctrl + alt + l
-	betterlockscreen -l
+ctrl + shift + l
+	i3lock -i ~/Downloads/f.png
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p,n}
