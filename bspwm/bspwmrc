@@ -43,3 +43,8 @@ picom &
 xsetroot -cursor_name left_ptr &
 ksuperkey -e 'Super_L=Super_L|R'
 conky &
+if [ "$MODE" == "LAPTOP" ] || [ "$MODE" == "THINKPAD" ]
+then
+    polkit &
+    lxpolkit &
+fi
