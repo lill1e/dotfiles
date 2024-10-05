@@ -13,10 +13,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "rose-pine/neovim",
-        as = "rose-pine",
+        "neanias/everforest-nvim",
         config = function()
-            vim.cmd("colorscheme rose-pine")
+            vim.cmd("colorscheme everforest")
         end
     })
 
@@ -45,7 +44,6 @@ return require('packer').startup(function(use)
     use({ "epwalsh/obsidian.nvim", requires = "nvim-lua/plenary.nvim" })
     use("IogaMaster/neocord")
     use("mfussenegger/nvim-jdtls")
-    use("neanias/everforest-nvim")
     use({ "nvim-neo-tree/neo-tree.nvim", branch = "v3.x", requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" } })
     use("jaimecgomezz/here.term")
 end)
