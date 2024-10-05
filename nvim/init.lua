@@ -22,3 +22,11 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.expandtab = false
     end
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "tex", "text", "markdown" },
+    callback = function()
+        vim.opt.spell = true
+        vim.opt.spelllang = "en_gb"
+    end
+})
