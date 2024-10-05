@@ -12,3 +12,4 @@ vim.api.nvim_set_keymap("n", "<Right>", "<Nop>", { noremap = true, silent = true
 vim.keymap.set("n", "<leader>n", vim.cmd.noh)
 vim.keymap.set("n", "<C-k>", ":ObsidianQuickSwitch<CR>")
 vim.keymap.set("n", "<leader>q", vim.cmd.quit)
+vim.keymap.set("n", "<leader>s", "z=")
