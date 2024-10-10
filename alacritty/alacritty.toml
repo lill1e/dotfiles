@@ -44,7 +44,6 @@ y = 10
 
 # Colors (Everforest Dark)
 
-# Default colors
 [colors.primary]
 background = '#2d353b'
 foreground = '#d3c6aa'
