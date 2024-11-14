@@ -10,8 +10,8 @@ require("here-term").setup({
     -- The minimal mappings used to toggle and kill the terminal. Available in
     -- `normal` and `terminal` mode.
     mappings = {
-        toggle = "<leader>t",
-        kill = "<leader>x",
+        toggle = "<C-t>",
+        kill = "<C-x>",
     },
     -- Additional mappings that I consider useful since you won't have to escape (<C-\><C-n>)
     -- the terminal each time. Available in `terminal` mode.
