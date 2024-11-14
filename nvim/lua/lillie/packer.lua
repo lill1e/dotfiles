@@ -13,9 +13,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "neanias/everforest-nvim",
+        "catppuccin/nvim",
         config = function()
-            vim.cmd("colorscheme everforest")
+            vim.cmd("colorscheme catppuccin-frappe")
         end
     })
 
