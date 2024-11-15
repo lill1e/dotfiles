@@ -13,9 +13,9 @@ return require('packer').startup(function(use)
     }
 
     use({
-        "neanias/everforest-nvim",
+        "catppuccin/nvim",
         config = function()
-            vim.cmd("colorscheme everforest")
+            vim.cmd("colorscheme catppuccin-frappe")
         end
     })
 
@@ -46,4 +46,11 @@ return require('packer').startup(function(use)
     use("mfussenegger/nvim-jdtls")
     use({ "nvim-neo-tree/neo-tree.nvim", branch = "v3.x", requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" } })
     use("jaimecgomezz/here.term")
+    use("christoomey/vim-tmux-navigator")
+    use({
+        "chomosuke/typst-preview.nvim",
+        run = function()
+            require "typst-preview".update()
+        end
+    })
 end)

@@ -14,6 +14,7 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 vim.opt.conceallevel = 2
 vim.opt.cursorline = true
+vim.opt.splitright = true
 
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 

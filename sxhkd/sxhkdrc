@@ -143,7 +143,7 @@ super + {h,j,k,l}
 
 # Lock Screen
 ctrl + shift + l
-	i3lock -i ~/Downloads/f.png
+	i3lock -i ~/Downloads/catppuccingirl.png
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p,n}
@@ -156,8 +156,8 @@ XF86Audio{RaiseVolume,LowerVolume}
 	bspvolume{ --inc, --dec}
 XF86AudioMute
 	bspvolume --toggle
-#XF86MonBrightness{Up,Down}
-#	bspbrightness{ --inc, --dec}
+XF86MonBrightness{Up,Down}
+	bspbrightness{ -s +5%, -s -5%}
 XF86Audio{Play,Next,Prev}
     playerctl {play-pause,next,previous}
 
