@@ -179,3 +179,7 @@ super + a
 # toggle window split
 super + s
     bspc node @parent -R 90
+
+# kill idea
+super + alt + k
+    killall -9 idea
