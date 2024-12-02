@@ -143,7 +143,7 @@ super + {h,j,k,l}
 
 # Lock Screen
 ctrl + shift + l
-	i3lock -i ~/Downloads/catppuccingirl.png
+	i3lock -i ~/Downloads/colourbg.png
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p,n}
