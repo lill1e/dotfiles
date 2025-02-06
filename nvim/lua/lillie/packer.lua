@@ -53,4 +53,5 @@ return require('packer').startup(function(use)
             require "typst-preview".update()
         end
     })
+    use("HiPhish/rainbow-delimiters.nvim")
 end)
