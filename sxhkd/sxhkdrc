@@ -146,8 +146,8 @@ ctrl + shift + l
 	i3lock -i ~/Downloads/colourbg.png
 
 # Apps
-super + shift + {w,d,m,o,t,e,s,p,n}
-	{firefox,discord,spotify,obsidian,thunar,kitty -e nvim,morgen,pavucontrol,logseq}
+super + shift + {w,d,m,o,t,e,s,p}
+	{firefox,discord,spotify,obsidian,thunar,kitty -e nvim,morgen,pavucontrol}
 super + ctrl + shift + {e}
     {code}
 
