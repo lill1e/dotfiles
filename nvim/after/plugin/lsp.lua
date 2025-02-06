@@ -54,8 +54,8 @@ cmp.setup({
         documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-        ["<C-n>"] = cmp.mapping.select_prev_item(cmp_select),
-        ["<C-m>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<C-k>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<C-j>"] = cmp.mapping.select_next_item(cmp_select),
         ["<C-Enter>"] = cmp.mapping.confirm({ select = true })
     }),
     snippet = {
