@@ -45,6 +45,6 @@ ksuperkey -e 'Super_L=Super_L|R'
 conky &
 if [ "$MODE" == "LAPTOP" ] || [ "$MODE" == "THINKPAD" ]
 then
-    polkit &
+    libinput-gestures-setup autostart start &
     lxpolkit &
 fi
