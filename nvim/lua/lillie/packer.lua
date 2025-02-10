@@ -41,7 +41,6 @@ return require('packer').startup(function(use)
     use("iamcco/markdown-preview.nvim")
     use("lervag/vimtex")
     use { "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" }
-    use({ "epwalsh/obsidian.nvim", requires = "nvim-lua/plenary.nvim" })
     use("IogaMaster/neocord")
     use("mfussenegger/nvim-jdtls")
     use({ "nvim-neo-tree/neo-tree.nvim", branch = "v3.x", requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", "MunifTanjim/nui.nvim" } })
