@@ -12,7 +12,7 @@ require("lspconfig").racket_langserver.setup({})
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { "rust_analyzer", "eslint", "lua_ls", "clangd", "gopls", "texlab", "html", "htmx", "tailwindcss" },
+    ensure_installed = {},
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})
@@ -30,7 +30,9 @@ local autoformat = function(bufnr)
         group = augroup,
         buffer = bufnr,
         callback = function()
-            vim.lsp.buf.format()
+            if vim.fn.expand("%:e") ~= "c" then
+                vim.lsp.buf.format()
+            end
         end
     })
 end
