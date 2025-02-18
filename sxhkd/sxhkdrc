@@ -3,7 +3,7 @@
 #
 
 # rofi drun
-super + r
+super + l
 	rofi -show drun
 
 # rofi calc
