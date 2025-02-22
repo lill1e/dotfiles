@@ -41,7 +41,7 @@ picom &
 ~/.config/scripts/fehbg.sh &
 ~/.config/polybar/launch.sh &
 xsetroot -cursor_name left_ptr &
-ksuperkey -e 'Super_L=Super_L|L'
+ksuperkey -e 'Super_L=Super_L|I'
 conky &
 if [ "$MODE" == "LAPTOP" ] || [ "$MODE" == "THINKPAD" ]
 then
