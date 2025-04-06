@@ -43,7 +43,6 @@ return require('packer').startup(function(use)
     use { "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" }
     use("IogaMaster/neocord")
     use("mfussenegger/nvim-jdtls")
-    use("jaimecgomezz/here.term")
     use("christoomey/vim-tmux-navigator")
     use({
         "chomosuke/typst-preview.nvim",
