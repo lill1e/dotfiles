@@ -149,7 +149,7 @@ ctrl + shift + l
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p}
-	{firefox,discord,spotify,obsidian,thunar,kitty -e nvim,morgen,pavucontrol}
+	{firefox,discord,spotify,obsidian,thunar,kitty -e nvim,google-calendar-nativefier-dark,pavucontrol}
 super + ctrl + shift + {e}
     {code}
 
