@@ -38,6 +38,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.filetype.add({
     extension = {
-        pf = "deduce"
+        pf = "deduce",
+        pc = "racket"
     }
 })
