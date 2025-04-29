@@ -51,4 +51,5 @@ return require('packer').startup(function(use)
         end
     })
     use("HiPhish/rainbow-delimiters.nvim")
+    use("rareitems/hl_match_area.nvim")
 end)
