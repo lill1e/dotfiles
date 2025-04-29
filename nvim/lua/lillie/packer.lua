@@ -53,4 +53,11 @@ return require('packer').startup(function(use)
     use("HiPhish/rainbow-delimiters.nvim")
     use("rareitems/hl_match_area.nvim")
     use("wakatime/vim-wakatime")
+    use({
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup({})
+        end
+    })
 end)
