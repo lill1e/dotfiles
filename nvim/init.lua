@@ -42,3 +42,5 @@ vim.filetype.add({
         pc = "racket"
     }
 })
+
+vim.diagnostic.config({ virtual_text = true })
