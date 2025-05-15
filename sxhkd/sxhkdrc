@@ -145,7 +145,7 @@ super + {h,j,k,l}
 
 # Lock Screen
 ctrl + shift + l
-    i3lock -c 303446ff -k --inside-color=303446ff --ring-color=c6d0f5ff --keyhl-color=f2d5cfff --date-str="%m %B %Y" --time-color=f2d5cfff --date-color=f2d5cfff --insidever-color=303446ff --ringver-color=c6d0f5ff --verif-color=f2d5cfff --insidewrong-color=303446ff --ringwrong-color=e78284ff --wrong-color=f2d5cfff
+    i3lock -c 303446ff -k --inside-color=303446ff --ring-color=c6d0f5ff --keyhl-color=f2d5cfff --date-str="%d %B %Y" --time-color=f2d5cfff --date-color=f2d5cfff --insidever-color=303446ff --ringver-color=c6d0f5ff --verif-color=f2d5cfff --insidewrong-color=303446ff --ringwrong-color=e78284ff --wrong-color=f2d5cfff
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p}
