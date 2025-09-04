@@ -177,6 +177,8 @@ ctrl + alt + shift + m
 # screenshot utility
 super + a
 	~/.config/scripts/screenshot.sh xorg
+super + alt + a
+	~/.config/scripts/screenshot.sh xwindow
 
 # toggle window split
 super + s

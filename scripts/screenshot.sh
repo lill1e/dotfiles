@@ -6,6 +6,9 @@ fname="%Y-%m-%d_%H%M%S.png"
 path="$sc/$(date +$fname)"
 if [ $1 == "wayland" ]; then
     grim -g "$(slurp)" "$path" && wl-copy < $path
+elif [ $1 == "xwindow" ]; then
+    scrot -s --focused "$path"
+    xclip -selection clipboard -t image/png -i "$path"
 else
     scrot -s --line mode=edge "$path"
     xclip -selection clipboard -t image/png -i "$path"
