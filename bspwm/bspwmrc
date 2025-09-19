@@ -38,11 +38,11 @@ fi
 
 # Startup Applications
 picom &
+conky &
 ~/.config/scripts/fehbg.sh &
-~/.config/polybar/launch.sh &
+# ~/.config/polybar/launch.sh &
 xsetroot -cursor_name left_ptr &
 ksuperkey -e 'Super_L=Super_L|I'
-conky &
 if [ "$MODE" == "LAPTOP" ] || [ "$MODE" == "THINKPAD" ]
 then
     libinput-gestures-setup autostart start &
