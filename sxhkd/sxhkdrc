@@ -88,8 +88,8 @@ super + {_,shift + }c
 # focus the next/previous desktop in the current monitor
 ctrl + alt + {Left,Right}
 	bspc desktop -f {prev,next}.local
-ctrl + alt + {h,l}
-	bspc desktop -f {prev,next}.local
+# ctrl + alt + {h,l}
+# 	bspc desktop -f {prev,next}.local
 alt + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
