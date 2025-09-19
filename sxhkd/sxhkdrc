@@ -145,7 +145,7 @@ super + {h,j,k,l}
 
 # Lock Screen
 ctrl + shift + l
-    i3lock -c 303446ff -k --inside-color=303446ff --ring-color=c6d0f5ff --keyhl-color=f2d5cfff --date-str="%d %B %Y" --time-color=f2d5cfff --date-color=f2d5cfff --insidever-color=303446ff --ringver-color=c6d0f5ff --verif-color=f2d5cfff --insidewrong-color=303446ff --ringwrong-color=e78284ff --wrong-color=f2d5cfff
+    i3lock -c 282c34ff -k --inside-color=282c34ff --ring-color=abb2bfff --keyhl-color=c6d0f5ff --date-str="%d %B %Y" --time-color=c6d0f5ff --date-color=c6d0f5ff --insidever-color=303446ff --ringver-color=abb2bfff --verif-color=c6d0f5ff --insidewrong-color=303446ff --ringwrong-color=e78284ff --wrong-color=c6d0f5ff --greeter-text "Battery: $(cat /sys/class/power_supply/BAT0/capacity)%" --greeter-pos "ix:iy+135" --greeter-size 26 --greeter-color=c6d0f5ff
 
 # Apps
 super + shift + {w,d,m,o,t,e,s,p}
