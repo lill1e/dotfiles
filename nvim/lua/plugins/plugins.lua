@@ -14,10 +14,10 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                handlers = 
-                function(name)
-                    vim.lsp.enable(name)
-                end,
+                handlers =
+                    function(name)
+                        vim.lsp.enable(name)
+                    end,
             })
 
             vim.lsp.enable("racket_langserver")
@@ -75,7 +75,7 @@ return {
         },
         opts_extend = { "sources.default" }
     },
-    { "lewis6991/gitsigns.nvim", opts = {} },
+    -- { "lewis6991/gitsigns.nvim", opts = {} },
     {
         "IogaMaster/neocord",
         opts = {
