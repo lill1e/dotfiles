@@ -29,14 +29,20 @@ return {
         opts = {
             formatters_by_ft = {
                 lua = { "stylua" },
-                typescript = { "prettier" },
-                javascript = { "prettier" },
-                json = { "prettier" },
+                typescript = { lsp_format = "fallback" },
+                javascript = { lsp_format = "fallback" },
+                json = { "prettier" }
             },
-            format_on_save = {
-                timeout_ms = 500,
-                lsp_format = "fallback"
-            }
+            format_on_save = function(bufnr)
+                local fmt_bypass = {
+                    c = true
+                }
+                if fmt_bypass[vim.bo[bufnr].filetype] then return end
+                return {
+                    timeout_ms = 2500,
+                    lsp_format = "fallback"
+                }
+            end
         }
     },
     {
