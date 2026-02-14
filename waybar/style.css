@@ -1,0 +1,189 @@
+/* @import url("colors/colors.css"); */
+/**/
+/* * { */
+/* 	all: unset; */
+/*   border: none; */
+/*   border-radius: 0; */
+/*   font-family: Iosevka Nerd Font; */
+/*   font-size: 15px; */
+/*   min-height: 0; */
+/* } */
+/**/
+/* *:hover { */
+/*   background-color: transparent; */
+/* } */
+/**/
+/* window#waybar { */
+/*   background: @base; */
+/*   color: @text; */
+/*   border-radius: 0px; */
+/* } */
+/**/
+/* tooltip { */
+/*   background: @base; */
+/*   border-radius: 0px; */
+/*   border-width: 1px; */
+/*   border-style: solid; */
+/*   border-color: @text; */
+/* } */
+/**/
+/* tooltip * { */
+/*   color: @text; */
+/* } */
+/**/
+/**/
+/* #workspaces { */
+/*   padding: 0px; */
+/*   margin-left: 0px; */
+/*   background-color: transparent; */
+/* } */
+/**/
+/* #workspaces button { */
+/* 	color: @text; */
+/*   background-color: transparent; */
+/*   margin: 0; */
+/*   padding: 0px; */
+/*   min-width: 24px; */
+/*   border-bottom: 1px solid transparent; */
+/*   border-radius: 0px; */
+/* } */
+/**/
+/* #workspaces button:hover { */
+/*   background-color: @hover-background; */
+/* } */
+/**/
+/* #workspaces button.active { */
+/*   background-color: @hover-background; */
+/*   border-bottom: 1px solid @text; */
+/* } */
+/**/
+/**/
+/* #idle_inhibitor, */
+/* #clock, */
+/* #battery, */
+/* #wireplumber, */
+/* #network, */
+/* #tray, */
+/* #backlight, */
+/* #mpris { */
+/*   padding: 6px 8px; */
+/* } */
+/**/
+/* #clock { */
+/* 	padding-right: 0; */
+/* } */
+/**/
+/* #tray { */
+/*   margin-left: 0px; */
+/* } */
+/* #tray menu { */
+/* 	background-color: @base; */
+/* 	color: @text; */
+/* 	border: 1px solid @text; */
+/* 	border-radius: 4px; */
+/* 	padding: 4px; */
+/* } */
+/**/
+/* #battery { */
+/*   margin-right: 0px; */
+/* } */
+/**/
+/* #battery.warning, */
+/* #battery.critical { */
+/*   border-bottom: 2px solid; */
+/*   margin-bottom: 3px; */
+/* } */
+/**/
+/* #battery.warning { */
+/*   border-color: @warning; */
+/* } */
+/**/
+/* #battery.critical { */
+/*   border-color: @critical; */
+/* } */
+/**/
+@import "colors/everforest.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: JetBrainsMono Nerd Font, FontAwesome;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: @fg;
+  color: @bg0;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px 0px 15px 15px;
+  transition-duration: .5s;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #7d6a40;
+  border-bottom-style: solid;
+}
+
+#custom-launcher,
+#clock,
+#clock-date,
+#workspaces,
+#pulseaudio,
+#network,
+#battery,
+#custom-powermenu {
+  background-color: @bg0;
+  color: @fg;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 12px;
+	border-radius: 10px;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #161a1d;
+  border-bottom-style: solid;
+}
+
+/* #workspaces { */
+/*   padding: 0px; */
+/* } */
+
+#workspaces button.active {
+  background-color: @blue;
+  color: @bg0;
+
+	border-radius: 10px;
+
+  margin-bottom: -5px;
+
+  border-bottom-width: 5px;
+  border-bottom-color: #366660;
+  border-bottom-style: solid;
+}
+
+#workspaces {
+  /* background-color: @green; */
+  /* color: @bg0; */
+  /* border-bottom-color: #556a35; */
+
+  margin-left: 15px;
+  /* padding-left: 20px; */
+  /* padding-right: 21px; */
+}
+
+#battery {
+  /* background-color: @red; */
+  /* color: @bg0; */
+  /* border-bottom-color: #951c1f; */
+
+  margin-right: 15px;
+  padding-left: 20px;
+  padding-right: 23px;
+}
