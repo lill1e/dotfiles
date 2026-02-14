@@ -1,0 +1,26 @@
+configuration {
+	modes: "drun,calc";
+	location: 0;
+	yoffset: 0;
+	xoffset: 0;
+    show-icons: true;
+}
+
+listview {
+    columns: 1;
+    lines: 20;
+}
+
+window {
+    width: 50%;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+//@theme "catppuccin-frappe"
+
+//@theme "/home/lillie/.local/share/rofi/themes/atom-one-dark.rasi"
+
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+
+@theme "/home/lillie/.local/share/rofi/themes/atom-one-dark.rasi"
